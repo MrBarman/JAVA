@@ -46,6 +46,6 @@ public static void main(String... args){
 	System.out.println("Overloading with different returntype, value:"+x);
 	a1.add(1,2,3);
 	a1.add("java");
-	a1.m1(null); //HERE COMPILER WILL SELECT MOST SPECIFIC METHOD BECAUSE "String" AND "StringBuffer" ARE SUB CLASSES OF "Object" CLASS. SO THE COMPILER WILL GENERATE CompileTimeError. BUT IF WE REMOVE ANYONE("String"/"StringBuffer"),THEN THE COMPILER WILL SELECT THE ONE WHIS IS NOT REMOVED
+	a1.m1(null); //HERE COMPILER WILL SELECT MOST SPECIFIC METHOD BECAUSE "String" AND "StringBuffer" ARE SUB CLASSES OF "Object" CLASS. SO THE COMPILER WILL GENERATE CompileTimeError. BUT IF WE REMOVE OR COMMENT ANYONE("String"/"StringBuffer"),THEN THE COMPILER WILL SELECT THE ONE WHICH IS NOT REMOVED
 }
 }
