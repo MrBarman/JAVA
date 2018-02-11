@@ -1,3 +1,3 @@
 # JAVA
-   > OOPS(Understanding Basic Concepts)\n
+    OOPS(Understanding Basic Concepts
     Sorting(Basic sorting algorithm implementation)
