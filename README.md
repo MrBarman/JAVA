@@ -1,2 +1,2 @@
 # JAVA
-    Implementation of JAVA functionalities with sample programs
+    Implementation of different JAVA functionalities along with OOPS and design patterns
