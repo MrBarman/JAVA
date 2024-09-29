@@ -2,7 +2,7 @@
  * This example contains behavior parameterization using lambda expression
  * Here, we have reduced the boilerplate code by using lambda expression as behavior
  * instead of passing the implementation in the param using anonymous class.
- * Using lambdas also eliminates the requirement of overriding
+ * Using lambdas also eliminates the requirement of implementing the interface and overriding
  * */
 
 package BehaviourParameterization.UsingLambdas;
@@ -37,7 +37,7 @@ public class UsingLambdas {
     }
 
     //filter method call the appropriate implementation based on the input behaviour
-    public static List<LanguageInfo> filterLanguage(List<LanguageInfo> languageInfoList, LanguagePredicate languagePredicate) {
+    private static List<LanguageInfo> filterLanguage(List<LanguageInfo> languageInfoList, LanguagePredicate languagePredicate) {
         List<LanguageInfo> result = new ArrayList<>();
         for (LanguageInfo languageInfo : languageInfoList) {
             if (languagePredicate.test(languageInfo)) {
