@@ -1,5 +1,5 @@
 ## What are Streams ?
-    - We can define Stream as a sequence of elements from a source that supports data
+     We can define Stream as a sequence of elements from a source that supports data
     processing opertations e.g. filter, map, limit, collect etc
 
 ### Stream vs Collections
@@ -21,7 +21,7 @@
     non stream value such as List, Integer or even void(forEach) from a stream pipeline
 
 ### Short circuit operations
-    - Operations that don't need to process the whole stream to produce results are refered as short circuit operations
+     Operations that don't need to process the whole stream to produce results are refered as short circuit operations
     e.g. - fineAny, anyMatch, findFirst etc
 
 ### Stateless vs Stateful operations
