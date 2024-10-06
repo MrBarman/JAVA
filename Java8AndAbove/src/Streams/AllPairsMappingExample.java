@@ -11,6 +11,7 @@ public class AllPairsMappingExample {
     public static void main(String[] args) {
         List<Integer> nums1 = Arrays.asList(1, 2, 3);
         List<Integer> nums2 = Arrays.asList(4, 5);
+        //we can't use map twice here because in this cas map returns Stream<Stream<int[]>>
         List<int[]> pairs = nums1.stream()
                 .flatMap(x -> nums2.stream().map(y -> new int[]{x, y})).toList();
 

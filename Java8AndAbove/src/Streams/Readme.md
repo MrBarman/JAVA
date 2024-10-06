@@ -19,3 +19,13 @@
     - Operations that closes a Stream are called Terminal Operation e.g. collect
     - Intermediate operations return another Stram as return type. On the other hand terminal oprations produce any
     non stream value such as List, Integer or even void(forEach) from a stream pipeline
+
+### Short circuit operations
+    - Operations that don't need to process the whole stream to produce results are refered as short circuit operations
+    e.g. - fineAny, anyMatch, findFirst etc
+
+### Stateless vs Stateful operations
+    - Operations such as filter take each element from the input stream and produce a result. They don't need to maintain a 
+    previous state for performing these ops. These kind of oprations are known as Stateless operations.
+    - Some operations such as sorted, distinct require knowledge of previous history to do their job. These kind of ops are 
+    are called Stateful operations. The storage requirement for such operations are unbounded. 
