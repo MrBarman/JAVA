@@ -9,6 +9,7 @@ package BehaviourParameterization.UsingLambdas;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class UsingLambdas {
 
@@ -20,7 +21,6 @@ public class UsingLambdas {
                 new LanguageInfo(4, "English", "Spoken"),
                 new LanguageInfo(5, "Hindi", "Spoken")
         );
-
         // passing the lambda expression as param
         List<LanguageInfo> spokenLanguage = filterLanguage(
                 languageInfoList,
